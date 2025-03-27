@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海登服饰 - 专业工作服装加工厂家</title>
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- 自定义Bootstrap样式表 -->
+    <link href="css/styles1.css" rel="stylesheet">
+    <!-- Font Awesome 图标库 -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .slogan {
+            font-size: 16px;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 300px;
+            background-image: url('img/公司大楼.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .banner-content {
+            background-color: rgba(248, 227, 227, 0.6);
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .banner h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #1a5276;
+            border-bottom: 2px solid #1a5276;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .advantages, .products, .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .advantage-item, .product-item, .service-item {
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h3 {
+            color: #2874a6;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background-color: #eaf2f8;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #dee2e6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .advantage-item, .product-item, .service-item {
+                flex-basis: 100%;
+            }
+            
+            .banner {
+                height: 300px;
+            }
+            
+            .banner h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部栏开始 -->
+    <header>    
+        <div class="container-fluid">
+            <div class="row bg-secondary py-2 px-xl-5">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-dark" href="">常见问题</a>
+                        <span class="text-muted px-2">|</span>
+                        <a class="text-dark" href="">帮助</a>
+                        <span class="text-muted px-2">|</span>
+                        <a class="text-dark" href="">联系热线：123456789</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-dark px-2" href="">
+                            <i class="fa-brands fa-qq"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fa fa-phone-volume"></i>
+                        </a>
+                        <a class="text-dark pl-2" href="">
+                            <i class="fa fa-map-marked-alt"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center py-3 px-xl-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">HD</span>海登服饰</h1>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-6 text-left">
+    
+                </div>
+                <div class="col-lg-3 col-6 text-right">
+                    <a href="" class="btn border">
+                        <i class="fas fa-heart text-primary"></i>
+                        <span class="badge">666</span>
+                    </a>
+                    <a href="" class="btn border">
+                        <i class="fa fa-envelope text-primary"></i>
+                        <span class="badge">888</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- 顶部栏结束 -->
+        <!-- 导航栏开始 -->
+        <div class="container-fluid">
+            <div class="row border-top px-xl-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                        <h6 class="m-0">分类</h6>
+                        <i class="fa fa-angle-down text-dark"></i>
+                    </a>
+                    <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
+                        <div class="navbar-nav w-100 overflow-hidden" style="height: 410px" >
+                            <div class="nav-item dropdown">
+                                <a href="products.html" class="nav-link" data-toggle="dropdown">季节工作服定制<i class="fa fa-angle-down float-right mt-1"></i></a>
+                                <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                    <a href="products.html?type_id=3" class="dropdown-item">春季工作服定制</a>
+                                    <a href="products.html?type_id=4" class="dropdown-item">夏季工作服定制</a>
+                                    <a href="products.html?type_id=5" class="dropdown-item">秋季工作服定制</a>
+                                    <a href="products.html?type_id=6" class="dropdown-item">冬季工作服定制</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="products.html" class="nav-link" data-toggle="dropdown">行业工作服定制<i class="fa fa-angle-down float-right mt-1"></i></a>
+                                <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                    <a href="products.html?type_id=7" class="dropdown-item">制造业</a>
+                                    <a href="products.html?type_id=8" class="dropdown-item">服务业</a>
+                                    <a href="products.html?type_id=9" class="dropdown-item">学校</a>
+                                    <a href="products.html?type_id=10" class="dropdown-item">医疗</a>
+                                    <a href="products.html?type_id=11" class="dropdown-item">安保</a>
+                                    <a href="products.html?type_id=12" class="dropdown-item">消防</a>
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="products.html" class="nav-link" data-toggle="dropdown">工作服类型定制<i class="fa fa-angle-down float-right mt-1"></i></a>
+                                <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                    <a href="products.html?type_id=13" class="dropdown-item">厂服</a>
+                                    <a href="products.html?type_id=14" class="dropdown-item">校服</a>
+                                    <a href="products.html?type_id=15" class="dropdown-item">劳保服</a>
+                                    <a href="products.html?type_id=16" class="dropdown-item">职业装</a>
+                                    <a href="products.html?type_id=17" class="dropdown-item">文化衫</a>
+                                </div>
+                            </div>
+                            <a href="products.html?type_id=18" class="nav-item nav-link">Polo衫</a>
+                            <a href="products.html?type_id=19" class="nav-item nav-link">冲锋衣</a>
+                            <a href="products.html" class="nav-item nav-link">绣字印花</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-9">
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                        <a href="" class="text-decoration-none d-block d-lg-none">
+                            <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">HD</span>HFhuamei</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active">首页</a>
+                                <a href="products.html" class="nav-item nav-link">产品服饰</a>
+                                <a href="#" class="nav-item nav-link">服饰详情</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">页面</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="cart.html" class="dropdown-item">购物车</a>
+                                        <a href="checkout.html" class="dropdown-item">结账</a>
+                                    </div>
+                                </div>
+                                <a href="about.html" class="nav-item nav-link">关于我们</a>
+                                <a href="contact.html" class="nav-item nav-link">联系我们</a>
+                            </div>
+                            <div class="navbar-nav ml-auto py-0">
+                                <a href="admin.html" class="nav-item nav-link">登录</a>
+                                <a href="" class="nav-item nav-link">注册</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <!-- 导航栏结束 -->
+     <div style="padding: 0 3.4%;">
+        <div class="banner">
+            <div class="banner-content">
+            <h1>专业工作服装解决方案提供商</h1>
+            <p>高品质 · 舒适安全 · 符合行业标准</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section>
+            <h2>公司简介</h2>
+            <p>海登服饰是一家专注于工作服装设计、生产和销售的专业厂家。我们致力于为客户提供高品质、舒适安全且符合行业标准的工作服装解决方案。</p>
+        </section>
+        
+        <section>
+            <h2>我们的优势</h2>
+            <div class="advantages">
+                <div class="advantage-item">
+                    <h3>丰富的行业经验</h3>
+                    <p>拥有多年工作服装加工经验，深刻理解各行业对工作服装的需求。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>先进的生产设备</h3>
+                    <p>引进先进的生产设备，确保产品质量和生产效率。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>严格的质量控制</h3>
+                    <p>从原材料到成品，每个环节都经过严格的质量检测，确保产品符合国家标准和行业规范。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>专业的设计团队</h3>
+                    <p>拥有经验丰富的设计团队，可根据客户需求提供个性化定制服务。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>完善的售后服务</h3>
+                    <p>提供完善的售后服务，解决客户后顾之忧。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>我们的产品</h2>
+            <div class="products">
+                <div class="product-item">
+                    <h3>各类工作服</h3>
+                    <p>包括但不限于工装、制服、防护服、厨师服、保洁服等。</p>
+                </div>
+                <div class="product-item">
+                    <h3>多种面料选择</h3>
+                    <p>提供棉、涤棉、防静电、阻燃等多种面料选择，满足不同行业需求。</p>
+                </div>
+                <div class="product-item">
+                    <h3>支持定制服务</h3>
+                    <p>可根据客户需求提供款式、颜色、logo等方面的定制服务。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>我们的服务</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>一站式服务</h3>
+                    <p>从设计、生产到物流配送，提供一站式服务，省心省力。</p>
+                </div>
+                <div class="service-item">
+                    <h3>快速响应</h3>
+                    <p>拥有高效的生产团队，可快速响应客户需求，缩短交货周期。</p>
+                </div>
+                <div class="service-item">
+                    <h3>价格合理</h3>
+                    <p>厂家直销，价格更具竞争力。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <p><strong>海登服饰，您值得信赖的工作服装合作伙伴！</strong></p>
+                <p>电话： [电话号码]</p>
+                <p>邮箱： [邮箱地址]</p>
+                <p>地址： [公司地址]</p>
+                <p>官网： [公司官网]</p>
+                <p style="margin-top: 20px;"><strong>我们期待与您的合作！</strong></p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 海登服饰 版权所有</p>
+        </div>
+    </footer>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
